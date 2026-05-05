@@ -27,17 +27,22 @@ e=7 &amp; Verify:
 gcd(7, 160) = 1 → Condition satisfied
 Public Key = (7, 187)
 6. Determine the Private Key Exponent (d)
-Compute d such that:
-d×e≡1mod  ϕ(n)d \times e \equiv 1 \mod \phi(n)d×e≡1modϕ(n)
+d×e≡1(modϕ(n))
+🔒 2. Encryption Formula
 
-d×7≡1mod  160d \times 7 \equiv 1 \mod 160d×7≡1mod160
-d=23d = 23d=23
-Private Key = (23, 187)
-7. Convert Plaintext into Numeric Form
-Choose a plaintext message and convert it into an integer M.
-8. Encrypt the Plaintext
-Use the encryption formula:
-C=Memod  nC = M^e \mod nC=Memodn C=887mod  187C = 88^7 \mod
+If message = M
+
+C=M
+e
+modn
+
+Where:
+
+C = ciphertext
+🔓 3. Decryption Formula
+M=C
+d
+modn
 187C=887mod187 C=11C = 11C=11
 Ciphertext obtained = 11
 9. (Optional) Verify by Decryption
